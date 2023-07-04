@@ -3,32 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>My Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Document</title>
 </head>
 
 <body>
+    <div class="container-title">
+        <h1>To Do List</h1>
+    </div>
     <div class="container">
-        <header class="text-center text-light my-4">
-            <h1 class="mb-4">Todo List</h1>
-			<form  class="add text-center my-4">
-            <input type="text" placeholder="Add new Todo" class="form-control input-field m-auto" name="add"/>
-        </form>
-            
-        </header>
-
-        <ul class="list-group todos mx-auto text-light">
-        </ul>
-<form action="" class="search">
-                <i class="fa fa-search icon"></i>
-                <input type="text" class="form-control input-field m-auto" placeholder="search todos">
-            </form>
+        <div class="inputcol">
+            <textarea name="text" class="textarea"></textarea>
+            <button type="button" class="buttoninput"><i class="fa-solid fa-check"></i></button>
+        </div>
+    </div>
+    <div class="todolist">
         
     </div>
-    <script src="app.js"></script>
 </body>
 
 </html>
